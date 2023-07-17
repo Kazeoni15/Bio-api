@@ -1,0 +1,71 @@
+<!--I wrote this code-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Protein Entry</title>
+    <style>
+    body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-family:sans-serif;
+
+    }
+
+
+    form{
+      display:grid;
+      grid-template-columns:.5fr 1fr;
+      gap:1rem;
+<!--      background-color:red;-->
+      align-items:center;
+      width: 50%;
+    }
+
+    input[type=text]{
+       width: 100%;
+       border-radius:5px;
+       height:20px;
+
+
+
+    }
+</style>
+</head>
+
+
+
+<body>
+    <h1>Add Protein Entry</h1>
+    <form method="POST" action="http://127.0.0.1:8000/api/protein/">
+        {% csrf_token %}
+        <div><label for="protein_id">Protein ID:</label></div>
+        <div><input type="text" name="protein_id" required></div>
+        <div> <label for="sequence">Sequence:</label></div>
+        <div><input type="text" name="sequence" required></input></div>
+        <div> <label for="organism_taxa_id">Taxa ID:</label></div>
+        <div><input type="text" name="organism_taxa_id" required></input></div>
+        <div><label for="organism_clade_identifier">Clade:</label></div>
+        <div><input type="text" name="organism_clade_identifier" required></input></div>
+        <div><label for="organism_scientific_name">Scientific Name:</label></div>
+        <div><input type="text" name="organism_scientific_name" required></input></div>
+        <div>  <label for="protein_length">Length:</label></div>
+        <div> <input type="text" name="protein_length" required></input></div>
+        <div><label for="domain_id">Domain ID:</label></div>
+        <div><input type="text" name="domain_id" required></div>
+        <div><label for="pfam_description">Pfam Description:</label></div>
+        <div><input type="text" name="pfam_description" required></div>
+        <div> <label for="domain_description">Domian Description:</label></div>
+        <div> <input type="text" name="domain_description" required></div>
+        <div><label for="domain_start_coordinate">Start:</label></div>
+        <div><input type="text" name="domain_start_coordinate" required></div>
+        <div><label for="domain_end_coordinate">End:</label></div>
+        <div><input type="text" name="domain_end_coordinate" required></div>
+
+        <input type="submit" value="Add Entry">
+    </form>
+</body>
+</html>
+
+<!--End of code I wrote-->

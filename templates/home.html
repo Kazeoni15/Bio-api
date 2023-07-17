@@ -1,0 +1,63 @@
+<!--I wrote this code-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Home</title>
+</head>
+<body>
+    <h1>Welcome to the API Home</h1>
+    <ul>
+        <li>
+
+            <p>GET  http://127.0.0.1:8000/api/protein/[PROTEIN ID] - return the protein sequence and all we know about it</p>
+
+            <a href="http://127.0.0.1:8000/api/protein/A0A016S8J7">http://127.0.0.1:8000/api/protein/A0A016S8J7</a>
+
+        </li>
+
+
+
+        <li>
+
+            <p>POST http://127.0.0.1:8000/api/protein/ - add a new record</p>
+
+            <a href="http://127.0.0.1:8000/api/protein/">http://127.0.0.1:8000/api/protein/</a>
+
+        </li>
+        <li>
+
+            <p>GET  http://127.0.0.1:8000/api/pfam/[PFAM ID] - return the domain and it's description</p>
+
+            <a href="http://127.0.0.1:8000/api/pfam/PF00360">http://127.0.0.1:8000/api/pfam/PF00360</a>
+
+        </li>
+
+        <li>
+
+            <p>GET  http://127.0.0.1:8000/api/proteins/[TAXA ID] - return a list of all proteins for a given organism</p>
+
+            <a href="http://127.0.0.1:8000/api/proteins/55661">http://127.0.0.1:8000/api/proteins/55661</a>
+
+        </li>
+        <li>
+
+            <p>GET  http://127.0.0.1:8000/api/pfams/[TAXA ID] - return a list of all domains in all the proteins for a given organism.</p>
+
+            <a href="http://127.0.0.1:8000/api/pfams/55661">http://127.0.0.1:8000/api/pfams/55661</a>
+
+        </li>
+        <li>
+
+            <p>GET  http://127.0.0.1:8000/api/coverage/[PROTEIN ID] - return the domain coverage for a given protein. That is Sum of the protein domain lengths (start-stop)/length of protein.</p>
+
+            <a href="http://127.0.0.1:8000/api/coverage/A0A016S8J7">http://127.0.0.1:8000/api/coverage/A0A016S8J7</a>
+
+        </li>
+
+
+
+    </ul>
+</body>
+</html>
+
+<!--End of code I wrote-->
